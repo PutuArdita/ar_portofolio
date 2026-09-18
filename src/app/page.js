@@ -143,7 +143,7 @@ import Navbar from "./components/Navbar";
 export default function Home() {
   return (
     <>
-      <Navbar name="Ar Portfolio" />
+      <Navbar name="ARDITA" />
       <main>
         <Hero />
         <About />

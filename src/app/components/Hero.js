@@ -16,7 +16,7 @@ export default function Hero() {
           {/* LEFT CONTENT */}
           <div className="max-w-2xl" data-aos="fade-right">
             <p className="mb-3 text-base font-medium text-neutral-500 dark:text-neutral-400 md:text-lg">
-              Hello, I&apos;m
+              Halo, Saya
             </p>
 
             <h1 className="mb-3 text-5xl font-bold leading-tight tracking-tight text-neutral-900 dark:text-white sm:text-6xl lg:text-7xl">
@@ -28,7 +28,7 @@ export default function Hero() {
                 <ReactTyped
                   strings={[
                     "Junior Web Dev",
-                    "Frontend Developer",
+                    "Junior Frontend Dev",
                     "UI/UX Enthusiast",
                   ]}
                   typeSpeed={80}
@@ -43,8 +43,9 @@ export default function Hero() {
             </h2>
 
             <p className="leading-relaxed mb-10 max-w-xl text-base text-neutral-500 dark:text-neutral-400 sm:text-lg sm:leading-8">
-              Saya membangun website yang modern, responsif, dan nyaman
-              digunakan menggunakan React, Next.js, dan teknologi web modern.
+              Saya memiliki ketertarikan dalam pengembangan website, mempelajari
+              teknologi serta terus meningkatkan kemampuan dalam pengembangan
+              website yang responsif, fungsional, dan user-friendly.
             </p>
 
             {/* BUTTONS */}
@@ -80,7 +81,7 @@ export default function Hero() {
 
             {/* SKILL TAG - UI/UX */}
             <div className="absolute z-20 top-20 -right-12 rounded-full bg-white px-5 py-3 text-sm font-medium text-neutral-900 shadow-lg dark:bg-neutral-800 dark:text-white">
-              UI/UX Design
+              UI/UX Enthusiast
             </div>
 
             {/* SKILL TAG - JUNIOR WEB DEV */}
@@ -90,7 +91,7 @@ export default function Hero() {
 
             {/* SKILL TAG - EXCEL */}
             <div className="absolute z-20 bottom-20 -right-10 rounded-full bg-white px-5 py-3 text-sm font-medium text-neutral-900 shadow-lg dark:bg-neutral-800 dark:text-white">
-              Excel
+              Microsoft Office
             </div>
           </div>
         </div>

@@ -71,11 +71,11 @@ export default function Skills() {
       <div className="w-full max-w-6xl mx-auto px-6">
         <div className="mb-10" data-aos="fade-right">
           <p className="mb-3 font-medium text-neutral-500 dark:text-neutral-400">
-            Technology
+            Teknologi
           </p>
 
           <h2 className="text-3xl font-bold tracking-tight text-neutral-900 dark:text-white md:text-4xl">
-            Technologies I Use
+            Beberapa Tools yang saya gunakan.
           </h2>
         </div>
 

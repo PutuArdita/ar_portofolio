@@ -28,16 +28,16 @@ export default function Experience() {
       <div className="w-full max-w-6xl mx-auto px-6">
         <div className="max-w-2xl mb-16" data-aos="fade-right">
           <p className="text-neutral-500 font-medium mb-3 dark:text-neutral-400">
-            Experience
+            Pengalaman
           </p>
 
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-neutral-900 mb-4 dark:text-white">
-            My Experience
+            Pengalaman Saya
           </h2>
 
           <p className="text-neutral-500 leading-7 dark:text-neutral-400">
-            Pengalaman dan perjalanan saya dalam mempelajari serta mengembangkan
-            website.
+            Beberapa pengalaman saya selama menempuh pendidikan maupun setelah
+            lulus.
           </p>
         </div>
 

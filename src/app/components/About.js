@@ -32,7 +32,7 @@ export default function About() {
             {/* Social Links */}
             <div className="flex items-center gap-6">
               <a
-                href="#"
+                href="https://wa.me/087762908293"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Whatsapp"
@@ -41,7 +41,7 @@ export default function About() {
                 <SiWhatsapp size={24} />
               </a>
               <a
-                href="#"
+                href="mailto:putuardita15@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Email"
@@ -51,7 +51,7 @@ export default function About() {
               </a>
 
               <a
-                href="#"
+                href="https://github.com/PutuArdita"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -61,7 +61,7 @@ export default function About() {
               </a>
 
               <a
-                href="#"
+                href="https://instagram.com/putuardita_"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -80,7 +80,7 @@ export default function About() {
               </a>
 
               <a
-                href="#"
+                href="https://linkedin.com/in/i-putu-ardita-37581441a"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -94,24 +94,24 @@ export default function About() {
           {/* Content */}
           <div data-aos="fade-left">
             <p className="mb-3 font-medium text-neutral-500 dark:text-neutral-400">
-              About Me
+              Tentang Saya
             </p>
 
             <h2 className="mb-6 text-3xl font-bold tracking-tight text-neutral-900 dark:text-white md:text-4xl">
-              Building websites with modern technologies.
+              Lulusan Sistem Informasi & IT Enthusiast.
             </h2>
 
             <p className="mb-5 leading-8 text-neutral-500 dark:text-neutral-400">
               Saya adalah seorang yang tertarik pada pengembangan website,
-              khususnya frontend development. Saya senang mempelajari teknologi
-              baru dan mengubah ide menjadi website yang fungsional dan
-              responsif.
+              khususnya frontend development. Saya senang dalam mempelajari hal
+              baru khususnya di bidang teknologi.
             </p>
 
             <p className="leading-8 text-neutral-500 dark:text-neutral-400">
-              Saat ini saya berfokus mempelajari React, Next.js, Tailwind CSS,
-              serta berbagai teknologi web modern untuk mengembangkan kemampuan
-              saya sebagai frontend developer.
+              Saya merupakan lulusan Sistem Informasi ITB STIKOM Bali
+              (2021-2025), dimana fokus utama yang dipelajari yaitu bagaimana
+              proses bisnis dari sistem, manajemen IT, dan juga teknis
+              pengembangan sistem.
             </p>
           </div>
         </div>

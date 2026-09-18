@@ -44,7 +44,7 @@ export default function Contact() {
     if (!formData.email.trim()) {
       newErrors.email = "Email is required.";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Please enter a valid email address.";
+      newErrors.email = "Mohon Masukkan Email yang Valid!!";
     }
 
     if (!formData.message.trim()) {
@@ -78,10 +78,10 @@ export default function Contact() {
       const result = await response.json();
 
       if (!result.success) {
-        throw new Error(result.message || "Failed to send message.");
+        throw new Error(result.message || "Gagal Mengirim Pesan!");
       }
 
-      setStatus("Message sent successfully!");
+      setStatus("Pesan Berhasil Dikirim!!");
 
       setFormData({
         name: "",
@@ -102,15 +102,15 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 overflow-hidden rounded-2xl shadow-xl">
           {/* LEFT */}
           <div className="bg-neutral-900 text-white p-8 md:p-12 dark:bg-neutral-800">
-            <p className="text-sm font-medium mb-3">CONTACT</p>
+            <p className="text-sm font-medium mb-3">KONTAK</p>
 
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Let's Connect
+              Mari Terhubung
             </h2>
 
             <p className="text-neutral-400 leading-7 max-w-md mb-10">
-              Saya selalu terbuka untuk berdiskusi mengenai project, ide
-              kreatif, maupun peluang untuk bekerja sama.
+              Saya selalu terbuka terkait masukan, berdiskusi mengenai project,
+              ide kreatif, maupun peluang untuk bekerja sama.
             </p>
 
             {/* Contact Information */}
@@ -121,7 +121,7 @@ export default function Contact() {
                 <div>
                   <p className="font-medium">Email</p>
                   <p className="text-neutral-400 text-sm mt-1">
-                    your@email.com
+                    putuardita15@gmail.com
                   </p>
                 </div>
               </div>
@@ -130,9 +130,9 @@ export default function Contact() {
                 <Phone size={22} className="mt-1 shrink-0" />
 
                 <div>
-                  <p className="font-medium">Phone</p>
+                  <p className="font-medium">HP / WhatsApp</p>
                   <p className="text-neutral-400 text-sm mt-1">
-                    +62 8XX XXXX XXXX
+                    +62 877-6290-8293
                   </p>
                 </div>
               </div>
@@ -141,9 +141,9 @@ export default function Contact() {
                 <MapPin size={22} className="mt-1 shrink-0" />
 
                 <div>
-                  <p className="font-medium">Location</p>
+                  <p className="font-medium">Lokasi</p>
                   <p className="text-neutral-400 text-sm mt-1">
-                    Bali, Indonesia
+                    Bongkasa, Abiansemal, Badung, Bali, Indonesia
                   </p>
                 </div>
               </div>
@@ -152,7 +152,7 @@ export default function Contact() {
             {/* Social Links */}
             <div className="flex items-center gap-6 mt-12 pt-8 border-t border-neutral-700">
               <a
-                href="#"
+                href="https://github.com/PutuArdita"
                 aria-label="GitHub"
                 className="text-neutral-400 hover:text-white transition"
               >
@@ -160,7 +160,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="#"
+                href="https://linkedin.com/in/i-putu-ardita-37581441a"
                 aria-label="LinkedIn"
                 className="text-neutral-400 hover:text-white transition"
               >
@@ -168,7 +168,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="#"
+                href="https://instagram.com/putuardita_"
                 aria-label="Instagram"
                 className="text-neutral-400 hover:text-white transition"
               >
@@ -179,7 +179,7 @@ export default function Contact() {
 
           {/* RIGHT */}
           <div className="bg-white text-neutral-900 p-8 md:p-12 dark:bg-neutral-800 dark:text-white">
-            <h3 className="text-2xl font-bold mb-8">Send Message</h3>
+            <h3 className="text-2xl font-bold mb-8">Kirim Pesan</h3>
 
             <form className="space-y-6" onSubmit={handleSubmit} noValidate>
               <div>
@@ -187,13 +187,13 @@ export default function Contact() {
                   htmlFor="name"
                   className="block text-sm font-medium mb-2"
                 >
-                  Your Name
+                  Nama
                 </label>
 
                 <input
                   id="name"
                   type="text"
-                  placeholder="Your name"
+                  placeholder="Masukkan Nama"
                   className="w-full border border-neutral-300 rounded-lg px-4 py-3 outline-none focus:border-neutral-900 transition dark:border-neutral-600 dark:bg-neutral-900 dark:text-white dark:placeholder:text-neutral-500 dark:focus:border-white"
                   name="name"
                   value={formData.name}
@@ -235,13 +235,13 @@ export default function Contact() {
                   htmlFor="message"
                   className="block text-sm font-medium mb-2"
                 >
-                  Message
+                  Pesan
                 </label>
 
                 <textarea
                   id="message"
                   rows="6"
-                  placeholder="Write your message..."
+                  placeholder="Masukkan Pesan..."
                   className="w-full border border-neutral-300 rounded-lg px-4 py-3 outline-none focus:border-neutral-900 transition resize-none dark:border-neutral-600 dark:bg-neutral-900 dark:text-white dark:placeholder:text-neutral-500 dark:focus:border-white"
                   name="message"
                   value={formData.message}
@@ -261,7 +261,7 @@ export default function Contact() {
                   className="flex items-center gap-2 px-6 py-3 bg-neutral-900 text-white rounded-lg font-medium hover:bg-neutral-700 transition dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200"
                 >
                   <Send size={18} />
-                  {isLoading ? "Sending..." : "Send Message"}
+                  {isLoading ? "Sending..." : "Kirim Pesan"}
                 </button>
               </div>
               {status && (

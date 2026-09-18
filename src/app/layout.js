@@ -9,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Ar Portfolio",
-  description: "My personal portfolio",
+  title: "Ardita - Portofolio",
+  description: "Website Portofolio Putu Ardita",
 };
 
 export default function RootLayout({ children }) {
