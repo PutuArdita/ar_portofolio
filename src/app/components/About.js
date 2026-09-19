@@ -32,7 +32,7 @@ export default function About() {
             {/* Social Links */}
             <div className="flex items-center gap-6">
               <a
-                href="https://wa.me/087762908293"
+                href="https://wa.me/+6287762908293"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Whatsapp"

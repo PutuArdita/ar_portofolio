@@ -13,7 +13,7 @@ export default function ProjectCard({
     <article className="group overflow-hidden rounded-xl border border-neutral-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-white/10 dark:bg-white/10 dark:backdrop-blur-md dark:shadow-black/20">
       {/* IMAGE */}
       <div className="relative aspect-video overflow-hidden border-b border-neutral-200 bg-neutral-100 dark:border-white/10 dark:bg-neutral-900/40">
-        <Image src={image} alt={title} fill className="object-contain" />
+        <Image src={image[0]} alt={title} fill className="object-contain" />
       </div>
 
       {/* CONTENT */}

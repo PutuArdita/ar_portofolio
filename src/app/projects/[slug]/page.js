@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import { projects } from "@/app/data/projects";
 
 export default async function ProjectDetail({ params }) {
@@ -41,14 +41,35 @@ export default async function ProjectDetail({ params }) {
         </div>
 
         {/* IMAGE */}
-        <div className="relative mb-16 aspect-video overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-900">
-          <Image
-            src={project.image}
-            alt={project.title}
-            fill
-            className="object-contain"
-          />
+        <div className="mb-16 space-y-6">
+          {project.image.map((image, index) => (
+            <div
+              key={image}
+              className="relative aspect-video w-full overflow-hidden bg-neutral-100 dark:bg-neutral-900"
+            >
+              <Image
+                src={image}
+                alt={`${project.title} screenshot ${index + 1}`}
+                fill
+                className="object-contain"
+              />
+            </div>
+          ))}
         </div>
+
+        {project.liveUrl && (
+          <div className="mb-16">
+            <Link
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-neutral-700 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200"
+            >
+              Visit Live Website
+              <ExternalLink size={16} />
+            </Link>
+          </div>
+        )}
 
         {/* CONTENT */}
         <div className="grid gap-12 md:grid-cols-[2fr_1fr]">
@@ -66,9 +87,11 @@ export default async function ProjectDetail({ params }) {
               My Role
             </h2>
 
-            <p className="leading-8 text-neutral-500 dark:text-neutral-400">
-              {project.role}
-            </p>
+            <ul className="leading-8 text-neutral-500 dark:text-neutral-400">
+              {project.role.map((role) => (
+                <li key={role}> - {role}</li>
+              ))}
+            </ul>
 
             <h2 className="mb-4 mt-12 text-2xl font-semibold text-neutral-900 dark:text-white">
               Features
