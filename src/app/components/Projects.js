@@ -7,16 +7,16 @@ export default function Projects() {
       <div className="w-full max-w-6xl mx-auto px-6">
         <div className="max-w-2xl mb-12" data-aos="fade-right">
           <p className="text-neutral-500 font-medium mb-3 dark:text-neutral-400">
-            Projects
+            Project
           </p>
 
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-neutral-900 mb-4 dark:text-white">
-            Some Things I've Built
+            Project yang pernah Saya kerjakan.
           </h2>
 
           <p className="text-neutral-500 leading-7 dark:text-neutral-400">
-            Beberapa project yang pernah saya kerjakan dan kembangkan
-            menggunakan berbagai teknologi web.
+            Beberapa project khususnya website yang pernah saya kerjakan dan
+            kembangkan menggunakan berbagai teknologi web.
           </p>
         </div>
 

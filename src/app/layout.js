@@ -15,14 +15,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>
-        {/* <Navbar name="Ar Portfolio" /> */}
-        <main className="pt-20">
-          <AOSProvider />
-          {children}
-        </main>
-      </body>
+    <html>
+      <>
+        <body className={poppins.className}>
+          <main className="pt-20">
+            <AOSProvider />
+            {children}
+          </main>
+        </body>
+      </>
     </html>
   );
 }

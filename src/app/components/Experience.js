@@ -1,28 +1,38 @@
+"use client";
+
+import { useState } from "react";
+
 const experiences = [
   {
-    year: "2026",
-    title: "Frontend Developer",
-    company: "Personal Project",
-    description:
-      "Membangun website menggunakan React, Next.js, dan Tailwind CSS dengan fokus pada responsive design dan user experience.",
-  },
-  {
-    year: "2025",
-    title: "Web Developer Intern",
-    company: "BPIFK",
-    description:
+    year: "2025-2026",
+    title: "Magang Pranata Komputer (Maganghub Kemnaker)",
+    company: "Balai Pemberdayaan Industri Fesyen dan Kriya (BPIFK)",
+    description: [
       "Mengembangkan dan melakukan pemeliharaan website menggunakan Laravel, PHP, dan MySQL.",
+      "Melakukan deploy fitur baru ke repository GIT dari vendor penyedia website.",
+      "Melakukan redesign tampilan website BPIFK menggunakan Figma.",
+      "Menganalisis fitur-fitur website satker lain di bawah Kementerian Perindustrian.",
+      "Melakukan maintenance peralatan kantor seperti printer dan komputer",
+      "Mendukung oprasional kantor",
+    ],
   },
   {
-    year: "2025",
-    title: "Web Development",
-    company: "Personal Project",
-    description:
-      "Mempelajari dan membangun berbagai website menggunakan HTML, CSS, JavaScript, PHP, dan Laravel.",
+    year: "2024",
+    title: "Magang DISKOMINFO",
+    company: "Dinas Komunikasi dan Informatika Kabupaten Badung",
+    description: [
+      "Mengelola Konten website pemkab Badung",
+      "Melakukan Peliputan kegiatan yang dilakukan dinas lain di Kabupaten Badung",
+      "Melakukan edit foto hasil peliputan menggunakan software Photoshop",
+      "Membuat rilis berita kegiatan.",
+      "Backup laporan upload konten menggunakan Google Spreadsheet",
+    ],
   },
 ];
 
 export default function Experience() {
+  const [expandedExperience, setExpandedExperience] = useState(null);
+
   return (
     <section id="experience" className="scroll-mt-20 py-24">
       <div className="w-full max-w-6xl mx-auto px-6">
@@ -75,13 +85,32 @@ export default function Experience() {
                     {experience.company}
                   </p>
 
-                  <p className="text-neutral-500 leading-7 max-w-xl dark:text-neutral-400">
-                    {experience.description}
-                  </p>
+                  <ul className="text-neutral-500 leading-7 max-w-xl list-disc list-inside space-y-2 dark:text-neutral-400">
+                    {(expandedExperience === experience.title
+                      ? experience.description
+                      : experience.description.slice(0, 1)
+                    ).map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
 
-                  <button className="mt-5 text-sm font-medium text-neutral-900 underline underline-offset-4 hover:text-neutral-500 transition dark:text-white dark:hover:text-neutral-400">
-                    Read More
-                  </button>
+                  {experience.description.length > 1 && (
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setExpandedExperience((current) =>
+                          current === experience.title
+                            ? null
+                            : experience.title,
+                        )
+                      }
+                      className="mt-5 text-sm font-medium text-neutral-900 underline underline-offset-4 hover:text-neutral-500 transition dark:text-white dark:hover:text-neutral-400"
+                    >
+                      {expandedExperience === experience.title
+                        ? "Less"
+                        : "More"}
+                    </button>
+                  )}
                 </div>
               </div>
             ))}
