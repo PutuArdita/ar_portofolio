@@ -48,4 +48,37 @@ export const projects = [
 
     features: ["CMS", "Informasi Publik", "Tenant"],
   },
+
+  {
+    slug: "nanoscapes_web",
+    title: "Nanoscapes Website",
+    description:
+      "Merupakan project untuk tugas akhir, dimana project ini merupakan Website landing page dan sistem POS untuk owner serta rekap laporan untuk Admin (dengan dashboard Admin). Dilengkapi dengan sistem CMS untuk pengelolaan data produk yang tampil di landing page.",
+    technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+    image: [
+      "/project/projectta1.jpg",
+      "/project/projectta2.jpg",
+      "/project/projectta3.jpg",
+    ],
+    liveUrl: "",
+
+    overview:
+      "Website dengan sistem POS dan kelola data produk untuk owner, dashboard Admin untuk kelola data produk dan rekap laporan, serta Landing page.",
+
+    role: [
+      "Merancang desain sistem dengan ERD, DFD (Data Flow Diagram) dan Figma untuk desain UI sistem.",
+      "Melakukan proses implementasi sistem ke dalam kode program.",
+      "Migrasi data ke dalam database",
+      "Melakukan testing pada setiap fitur agar sesuai dengan perancangan",
+      "Melakukan analisa terkait error serta bug yang terjadi",
+    ],
+
+    features: [
+      "Dashboard Admin",
+      "Sistem POS",
+      "Kelola data produk",
+      "Report Harian, Mingguan, dan Bulanan",
+      "Riwayat Transaksi",
+    ],
+  },
 ];
