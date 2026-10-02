@@ -81,4 +81,25 @@ export const projects = [
       "Riwayat Transaksi",
     ],
   },
+
+  {
+    slug: "redesignweb-bpifk",
+    title: "Redesign Web BPIFK",
+    description:
+      "Merupakan project redesign beberapa tampilan website BPIFK yang nantinya akan digunakan sebagai acuan untuk pengembangan kedepannya.",
+    technologies: ["Figma", "Beberapa Pluggin"],
+    image: ["/project/redesignfigma1.jpg"],
+    liveUrl: "",
+
+    overview:
+      "Project redesign beberapa tampilan halaman website BPIFK menggunakan software Figma, dimana proses ini dilakukan sebagai acuan pengembangan website kedepannya.",
+
+    role: [
+      "Menentukan frame, icon, serta prototype desain seperti apa",
+      "Melakukan proses pengumpulan asset seperti gambar, logo dan deskripsi",
+      "Melakukan proses desain dengan menentukan frame, layout, menentukan effect scroll dan hover",
+    ],
+
+    features: ["Design yang responsif"],
+  },
 ];
